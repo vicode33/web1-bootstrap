@@ -1,0 +1,35 @@
+body {
+    background-image: url(/assets/bg4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    
+  }
+  .navbar-nav .nav-link.active {
+    color: #cc1ea6 !important; 
+  }
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.05); 
+  }
